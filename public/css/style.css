@@ -8,16 +8,16 @@ body{
     min-height: 200rem;
 }
 
-#welcome-1{
+#navs{
     background-color: #29BFD3;
 }
 
-#welcome-1 h1{
+#navs h1{
     padding: 5rem;
     color: #000000;
 }
 
-.card-randpost{
+.card-post{
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 2rem;
@@ -28,6 +28,7 @@ body{
 
 #ads img{
     max-width: 100%;
+    margin-top: 2rem;
 }
 
 nav{
@@ -48,6 +49,15 @@ nav ul li{
     list-style: none;
 }
 nav ul li a{
+    display: block;
+    color: #ffff;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 50px;
+    font-weight: bold;
+}
+.nav-item{
     display: block;
     color: #ffff;
     padding: 0 20px;
