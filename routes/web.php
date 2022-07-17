@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\PostsController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MainController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [PostsController::class, 'index']);
-Route::get('/posts', [PostsController::class, 'posts']);
-Route::get('/categories', [PostsController::class, 'categories']);
+Route::get('/', [MainController::class, 'index']);
+Route::get('/posts', [PostController::class, 'index']);
+Route::get('/categories', [CategoryController::class, 'index']);
