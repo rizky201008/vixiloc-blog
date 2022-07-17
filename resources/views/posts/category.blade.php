@@ -11,7 +11,7 @@
         <div class="container-fluid">
             <div class="card-post">
                 <div class="row justify-content-center">
-                    <h2 class="text-center">Semua Kategori</h2>
+                    <h2 class="text-center">Kategori : Kategori</h2>
                     <div class="col-md-3">
                         <div class="cards">
                             <a href="#">
