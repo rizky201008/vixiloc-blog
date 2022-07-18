@@ -17,5 +17,7 @@ use App\Http\Controllers\CategoryController;
 */
 
 Route::get('/', [MainController::class, 'index']);
-Route::get('/posts', [PostController::class, 'index']);
 Route::get('/categories', [CategoryController::class, 'index']);
+Route::get('/category/{slug}', [CategoryController::class, 'category']);
+Route::get('/posts', [PostController::class, 'index']);
+Route::get('/post/{slug}', [PostController::class, 'post']);
