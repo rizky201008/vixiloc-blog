@@ -9,8 +9,10 @@ class CategoryController extends Controller
 {
     public function index()
     {
+        $category = Category::all();
         return view('categories.categories', [
-            'title' => 'Semua Kategori'
+            'title' => 'Semua Kategori',
+            'category' => $category
         ]);
     }
     public function category($slug)

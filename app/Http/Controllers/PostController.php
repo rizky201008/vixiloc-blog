@@ -9,15 +9,18 @@ class PostController extends Controller
 {
     public function index()
     {
+        $post = Post::all();
         return view('posts.posts', [
-            'title' => 'Postingan'
+            'title' => 'Postingan',
+            'post' => $post
         ]);
     }
     public function post($slug)
     {
         $posts = Post::where('slug','=',$slug);
         return view('posts.post',[
-            'title'=>'Postingan'
+            'title'=>$posts['title'],
+            'posts' => $posts
         ]);
     }
 }
