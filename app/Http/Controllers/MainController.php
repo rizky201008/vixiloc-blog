@@ -6,9 +6,16 @@ use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    public function index(){
+    public function home()
+    {
         return view('welcome',[
-            'title'=>'Home'
+            'title'=>'home'
+        ]);
+    }
+    public function category($category)
+    {
+        return view('category', [
+            'title' => $category
         ]);
     }
 }
