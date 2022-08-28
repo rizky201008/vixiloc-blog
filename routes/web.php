@@ -16,4 +16,5 @@ use App\Http\Controllers\CategoryController;
 |
 */
 
-Route::get('/', [MainController::class, 'index']);
+Route::get('/', [MainController::class, 'home']);
+Route::get('/c/{category}', [MainController::class, 'category']);
